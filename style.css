@@ -1,0 +1,152 @@
+/* Reset e Configurações Gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+header {
+  background-color: #004d00;
+  color: white;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+nav a {
+  margin-left: 2rem;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00a86b;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1504593397299-b4b2c650df75?auto=format&fit=crop&w=1950&q=80 ') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #00a86b;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 0 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.hero-buttons a:hover {
+  background-color: #007a4a;
+}
+
+/* Seções Comuns */
+.section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #004d00;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 1rem 2rem;
+  background-color: #004d00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #003322;
+}
+
+/* Footer */
+footer {
+  background-color: #004d00;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+footer a {
+  color: white;
+  margin: 0 0.5rem;
+}
